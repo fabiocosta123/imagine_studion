@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -169,7 +171,7 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   place-items: center;
   margin: 0;
-  padding: 4.375rem 1rem;
+  padding: 4.375rem;
 }
 
 .counter__container h3 {
@@ -177,7 +179,7 @@ ul {
 }
 
 .counter__container h3 small {
-  font-size: 1.23rem;
+  font-size: 1.25rem;
   display: block;
 }
 
