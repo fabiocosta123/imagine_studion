@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -23,6 +25,12 @@ footer {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 1140px;
+
+  margin: 0 auto;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -32,18 +40,22 @@ ul {
 .navbar {
   position: fixed;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr 9fr;
-  align-items: center;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 7.75rem;
-  padding: 0 1rem;
+  width: 100%;
   background-color: #000;
   color: #fff;
 }
 
+.navbar__container {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+
+  width: 100vw;
+  height: 7.75rem;
+  padding: 0 1rem;
+}
 .navbar__links {
   justify-self: end;
 }
@@ -81,17 +93,6 @@ ul {
 .copy--primary {
   color: var(--color-primary);
 }
-
-/*#slider {
-  height: calc(100vh - 7.75rem);
-  padding: var(--default-padding);
-  background-color: #000;
-  background-image: url("../img/banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #fff;
-}*/
 
 #slider {
   background-color: #000;
@@ -168,8 +169,8 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   place-items: center;
-  margin: 0;
-  padding: 4.375rem 1rem;
+  margin-left: 12rem;
+  padding: 4.375rem;
 }
 
 .counter__container h3 {
@@ -177,7 +178,7 @@ ul {
 }
 
 .counter__container h3 small {
-  font-size: 1.23rem;
+  font-size: 1.25rem;
   display: block;
 }
 
@@ -187,11 +188,16 @@ ul {
   gap: 3.125rem;
   align-items: center;
   padding: 4.375rem;
+  margin-left: 12rem;
 }
 
-.institutional__copy {
-  padding: 0 1.875rem;
+.institutional__img {
+  max-width: 550px;
 }
+
+/*.institutional__copy {
+  padding: 0 1.875rem;
+}*/
 
 .institutional__copy h6 {
   font-size: 0.875;
@@ -210,4 +216,53 @@ ul {
 .institutional p {
   font-size: 1.0625;
   line-height: 1.6875rem;
+}
+
+.quote {
+  background-image: url(../img/parallax.jpg);
+  min-height: 80vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.quote__container {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  min-height: 80vh;
+}
+
+.quote__copy {
+  background-color: #fff;
+  padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  letter-spacing: 0.1875rem;
+  line-height: 1.4375rem;
+  width: 53ch;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.quote__copy h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.1875rem;
+  margin-top: 1.875rem 0;
+}
+
+.quote__copy h2 span {
+  display: block;
+}
+
+.btn--quote {
+  color: var(--color-copy);
+  border-color: var(--color-copy);
+  background: unset;
 }
