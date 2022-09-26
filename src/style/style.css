@@ -25,6 +25,10 @@ footer {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 1140px;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -34,18 +38,22 @@ ul {
 .navbar {
   position: fixed;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr 9fr;
-  align-items: center;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 7.75rem;
-  padding: 0 1rem;
+  width: 100%;
   background-color: #000;
   color: #fff;
 }
 
+.navbar__container {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+
+  width: 100vw;
+  height: 7.75rem;
+  padding: 0 1rem;
+}
 .navbar__links {
   justify-self: end;
 }
@@ -83,17 +91,6 @@ ul {
 .copy--primary {
   color: var(--color-primary);
 }
-
-/*#slider {
-  height: calc(100vh - 7.75rem);
-  padding: var(--default-padding);
-  background-color: #000;
-  background-image: url("../img/banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #fff;
-}*/
 
 #slider {
   background-color: #000;
@@ -191,9 +188,13 @@ ul {
   padding: 4.375rem;
 }
 
-.institutional__copy {
-  padding: 0 1.875rem;
+.institutional__img {
+  max-width: 550px;
 }
+
+/*.institutional__copy {
+  padding: 0 1.875rem;
+}*/
 
 .institutional__copy h6 {
   font-size: 0.875;
