@@ -161,39 +161,6 @@ ul {
   color: #fff;
 }
 
-<<<<<<< HEAD
-.footer {
-  background-color: #000;
-  color: #fff;
-  padding: 0 1rem;
-}
-
-.footer__container {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  align-items: center;
-  padding: 5.25rem 0;
-}
-
-.footer .logo--studion {
-  justify-self: start;
-  margin: 0;
-}
-
-.logo--studion__subtitle {
-  display: block;
-  font-weight: 300;
-
-  font-size: 0.875rem;
-}
-
-.footer__form {
-  justify-self: center;
-}
-
-.footer__social {
-  justify-self: end;
-=======
 #counter {
   background-color: var(--color-primary);
   color: #fff;
@@ -300,5 +267,54 @@ ul {
   color: var(--color-copy);
   border-color: var(--color-copy);
   background: unset;
->>>>>>> 52f938c7f22562124a139e3543ece447545fe494
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  padding: 5.25rem 0 3.75rem 0;
+}
+.footer .logo--studion {
+  justify-self: start;
+  margin: 0;
+}
+
+.logo--studion__subtitle {
+  font-weight: 300;
+
+  font-size: 0.875rem;
+}
+
+.footer__form {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 9ch auto;
+  gap: 1.25rem;
+}
+
+.footer__form label {
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: center;
+}
+.footer__form fieldset {
+  border: unset;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.footer__form input {
+  width: 100%;
+}
+
+.footer__social {
+  justify-self: end;
 }
