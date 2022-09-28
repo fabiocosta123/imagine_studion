@@ -47,6 +47,7 @@ ul {
   width: 100%;
   background-color: #000;
   color: #fff;
+  padding: 2.75rem;
 }
 
 .navbar__container {
@@ -60,6 +61,7 @@ ul {
 }
 .navbar__links {
   justify-self: end;
+  padding-left: 15rem;
 }
 
 .navbar__links li {
@@ -83,12 +85,13 @@ ul {
   line-height: 1ch; /* relativa ao tamanho da altura do glifo 0 da fonte*/
   font-weight: 900;
   text-transform: uppercase;
-  text-align: right;
+  text-align: left;
+  margin-left: 14rem;
 }
 
 .logo--studion__subtitle {
   font-weight: 300;
-  float: right;
+  margin-left: 7.32rem;
   font-size: 0.875rem;
 }
 
