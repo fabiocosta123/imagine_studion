@@ -67,7 +67,7 @@ ul {
   text-align: right;
 }
 
-.logo--studion_subtitle {
+.logo--studion__subtitle {
   font-weight: 300;
   float: right;
   font-size: 0.875rem;
@@ -151,4 +151,37 @@ ul {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
   color: #fff;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  padding: 5.25rem 0;
+}
+
+.footer .logo--studion {
+  justify-self: start;
+  margin: 0;
+}
+
+.logo--studion__subtitle {
+  display: block;
+  font-weight: 300;
+
+  font-size: 0.875rem;
+}
+
+.footer__form {
+  justify-self: center;
+}
+
+.footer__social {
+  justify-self: end;
 }
