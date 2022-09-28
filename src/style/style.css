@@ -305,6 +305,8 @@ ul {
   text-align: center;
 }
 .footer__form fieldset {
+  display: grid;
+  grid-template-columns: auto 3.375rem;
   border: unset;
   margin: 0;
   padding: 0;
@@ -312,7 +314,28 @@ ul {
 }
 
 .footer__form input {
-  width: 100%;
+  background-color: var(--color-primary);
+  border: unset;
+  height: 2.875rem;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.footer__form input::placeholder {
+  color: #000;
+}
+
+.footer__form input:focus {
+  outline: unset;
+}
+
+.footer__form button {
+  border: unset;
+  height: 2.875rem;
+  cursor: pointer;
 }
 
 .footer__social {
