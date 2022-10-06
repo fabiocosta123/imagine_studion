@@ -6,8 +6,12 @@
 @import "../css/_base.css";
 @import "../css/_utils.css";
 @import "../css/_btn.css";
-@import "../css/_navbar.css";
 
+/*componentes*/
+@import "../css/_navbar.css";
+@import "../css/_hero.css";
+@import "../css/_footer.css";
+
+/*pages*/
 @import "../css/_home.css";
 @import "../css/_contact.css";
-@import "../css/_footer.css";

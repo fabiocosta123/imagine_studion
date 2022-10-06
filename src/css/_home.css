@@ -5,7 +5,7 @@
 
 .slide {
   position: relative;
-  height: calc(100vh - 7.75rem);
+  height: 90vh;
   overflow: hidden;
 }
 
@@ -20,6 +20,7 @@
   position: absolute;
   top: 6.25rem;
   left: 50vw;
+  margin-top: 3rem;
 }
 
 .slide_copy h6 {
