@@ -1,0 +1,9 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact__form {
+  background-color: #000;
+  color: #fff;
+}
