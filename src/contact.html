@@ -45,41 +45,53 @@
     <main>
       <section class="contact">
         <section class="contact__info">
-          <h3>Liga pra gente</h3>
-          <span>
-            <i class="fas fa-phone fa-flip-horizontal"></i>
-            +55 48 32235769
-          </span>
-          <span>
-            <i class="fab fa-whatsapp fa-flip-horizontal"></i>
-            + 48 99943777
-          </span>
-          <span>
-            <h3>Venha conhecer nossa casa</h3>
+          <div class="contact__info__container">
+            <h3>Liga pra gente</h3>
             <span>
-              <i class="fas fa-map-marker-alt"></i>
-              Rua Miguel Daux, 129 - Coqueiros Florianópolis / SC
+              <i class="fas fa-phone fa-flip-horizontal"></i>
+              +55 48 32235769
             </span>
-          </span>
+            <span>
+              <i class="fab fa-whatsapp fa-flip-horizontal"></i>
+              + 48 99943777
+            </span>
+            <span>
+              <h3>Venha conhecer nossa casa</h3>
+              <span>
+                <i class="fas fa-map-marker-alt"></i>
+                Rua Miguel Daux, 129 - Coqueiros Florianópolis / SC
+              </span>
+            </span>
+          </div>
+         
         </section>
 
         <section class="contact__form">
-          <h3>Deixe sua mensagem</h3>
-          <form>
+          
+          <form class="contact__form__container">
+            <h3>Deixe sua mensagem</h3>
             <label for="name">Seu nome</label>
             <input type="text" id="name" />
 
             <label for="e-mail">Seu e-mail</label>
             <input type="email" id="e-mail" />
 
-            <label for="message">Deixe sua mensagem</label>
+            <label for="message">Sua mensagem</label>
             <input type="text" id="message" />
 
             <button class="btn btn--contact" type="submit">Enviar</button>
           </form>
         </section>
 
-        <section class="maps"></section>
+        <section class="maps">
+         
+          <iframe 
+            src="https://maps.google.com/maps?
+            q=%20Rua%20Miguel%20Daux,%20129%20-%20Coqueiros%20Florian%C3%B3polis%20/%20SC&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+        
+        </section>
       </section>
     </main>
     <footer class="footer">
