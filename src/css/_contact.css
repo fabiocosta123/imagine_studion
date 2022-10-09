@@ -1,0 +1,94 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact h3 {
+  margin: 0;
+  margin-bottom: 1.875rem;
+  font-size: 1.5625rem;
+}
+
+.contact__info h3 {
+  margin-top: 2.5rem;
+}
+
+.contact__info,
+.contact__form {
+  padding: 4rem 0;
+}
+
+.contact__info i {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+.contact__form__label,
+.contact__form__input {
+  display: block;
+}
+
+.contact__info span {
+  font-family: "Roboto";
+  display: block;
+  gap: 0.625rem;
+  font-weight: 700;
+  line-height: 1.6875rem;
+}
+
+.contact__info__container,
+.contact__form__container {
+  width: 540px;
+}
+
+.contact__info__container {
+  float: right;
+  padding-right: 7.125rem;
+}
+
+.contact__form__container {
+  padding-left: 7.125rem;
+}
+
+.contact__form {
+  background-color: #000;
+  color: #fff;
+  padding-top: 5.5rem;
+}
+
+.contact__form label,
+.contact__form__input {
+  display: block;
+}
+
+.contact__form label {
+  font-weight: 700;
+}
+
+.contact__form input {
+  width: 100%;
+  margin-bottom: 1.875rem;
+  background: unset;
+  border: unset;
+  border-bottom: 0.1rem solid #fff;
+  color: #fff;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.contact__form input:focus {
+  outline: unset;
+}
+.contact__form button {
+  float: right;
+}
+
+.maps,
+.maps iframe {
+  width: 200%;
+  height: 36.5rem;
+}
+
+.maps {
+  overflow: hidden;
+}
