@@ -1,6 +1,10 @@
-#slider {
+.slider {
   background-color: #000;
   color: #fff;
+}
+
+.slider__prev-arrow {
+  z-index: 1;
 }
 
 .slide {
