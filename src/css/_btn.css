@@ -21,6 +21,12 @@
   color: #fff;
 }
 
+@media screen and (min-width: 1280px) {
+  .btn--institutional {
+    display: inline;
+  }
+}
+
 .btn--institutional:hover,
 .btn--contact:hover {
   color: var(--color-copy);
